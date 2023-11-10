@@ -49,7 +49,7 @@ By integrating quantum algorithms into classical machine learning workflows, q-K
 
 ### Algorithm Workflow
 
-The quantum KNN classifier uses the same approach for classifying data as the classical KNN classifier. The data itself may be either classical (encoded through quantum encoding techniques) or quantum (obtained from physical quantum-mechanical experiments). However, it provides a significant advantage over its classical counterpart by processing the training samples in parallel. This reduces the number of queries required to run the circuit.
+The quantum KNN classifier uses the same approach for classifying data as the classical KNN classifier. The data itself may be either **classical** (encoded through quantum encoding techniques) or **quantum** (obtained from physical quantum-mechanical experiments). However, it provides a significant advantage over its classical counterpart by processing the training samples in parallel. This reduces the number of queries required to run the circuit.
 
 ![](/readme_visuals/quantum_knn_workflow.png)
 
