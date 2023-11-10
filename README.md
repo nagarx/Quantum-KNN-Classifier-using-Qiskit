@@ -32,12 +32,8 @@ The SWAP test is used to measure the overlap between quantum states, which corre
 #### Interference and Measurement:
 
 Quantum interference is leveraged to measure the probability amplitude, which collapses due to the measurement postulate of quantum mechanics. The probability $P(|0\rangle)$ is computed and used to calculate the distance $D$ between the test and training samples:
-$$
-\begin{aligned}
-& P(|0\rangle)=\frac{1}{2}+\frac{1}{2}\left|\left\langle\phi_{\text {test }} \mid \phi_{\text {train }}\right\rangle\right|^2, \\
-& D=\sqrt{1-\left|\left\langle\phi_{\text {test }} \mid \phi_{\text {train }}\right\rangle\right|^2} .
-\end{aligned}
-$$
+$$P(|0\rangle)=\frac{1}{2}+\frac{1}{2}\left|\left\langle\phi_{\text {test }} \mid \phi_{\text {train }}\right\rangle\right|^2,$$
+$$D=\sqrt{1-\left|\left\langle\phi_{\text {test }} \mid \phi_{\text {train }}\right\rangle\right|^2}$$
 
 #### Classical Post-Processing:
 
