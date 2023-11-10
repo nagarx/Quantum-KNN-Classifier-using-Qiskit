@@ -10,6 +10,8 @@ In this project, we have harnessed the power of Qiskit to implement a quantum ve
 
 This quantum version of the KNN algorithm aims to explore the potential speed-up and efficiency gains that quantum computing may offer over its classical counterpart. By exploiting quantum computing principles such as superposition and interference, we seek to perform the algorithm's operations in a fundamentally novel way that could only be achieved within a quantum computing framework.
 
+![](/readme_visuals/knn_visual.png)
+
 ## Theoretical Background and Project Workflow
 The K-Nearest Neighbors (KNN) algorithm is a cornerstone of machine learning, which classifies entities based on the closest training examples in the feature space. Quantum K-Nearest Neighbors (q-KNN) brings this principle into the quantum domain, harnessing the computational advantages of quantum states and entanglement.
 
