@@ -1,2 +1,7 @@
-pip install pylatexenc
-pip install qiskit-aer
+numpy
+pandas
+pylatexenc
+qiskit
+qiskit-aer
+seaborn
+scikit-learn

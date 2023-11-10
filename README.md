@@ -49,28 +49,22 @@ By integrating quantum algorithms into classical machine learning workflows, q-K
 
 ## Installation
 
-Before running the notebook, ensure you have Python installed along with the following libraries:
+To set up the necessary environment for running the q-KNN notebook, you need to have Python installed. All required Python libraries can be easily installed through the `requirements.txt` file included in the repository.
 
-- NumPy: For numerical computations.
-- pandas: For data manipulation and analysis.
-- Seaborn: For statistical data visualization.
-- scikit-learn: For data mining and data analysis.
-- Qiskit: For working with quantum circuits and simulating them.
-
-You can install these libraries using `pip`:
+Please follow the steps below to install the dependencies:
 
 ```bash
-pip install numpy pandas seaborn scikit-learn qiskit
+# Clone the repository (if you haven't already done so)
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
+
+# (Optional) Create and activate a virtual environment
+python -m venv venv
+source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+
+# Install the required packages
+pip install -r requirements.txt
 ```
-
-## Usage
-
-To use this project, follow these steps:
-
-1. Clone the repository or download the `q-KNN.ipynb` notebook.
-2. Ensure you have Jupyter Notebook installed.
-3. Open the `q-KNN.ipynb` notebook in Jupyter Notebook or JupyterLab.
-4. Execute the cells in sequence to follow the q-KNN algorithm implementation.
 
 ## Code Overview
 
