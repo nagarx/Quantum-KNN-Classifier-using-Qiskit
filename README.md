@@ -16,17 +16,13 @@ The K-Nearest Neighbors (KNN) algorithm is a cornerstone of machine learning, wh
 #### Data Encoding:
 
 In q-KNN, classical vectors $\vec{x}$ are encoded into quantum states using amplitude encoding. This process translates a classical vector into the amplitudes of a quantum state, leveraging the state's ability to exist in multiple states simultaneously (superposition). The encoding is represented as:
-$$
-|\phi(\vec{x})\rangle=\sum_{i=1}^N \sqrt{x_i}|i\rangle,
-$$
+$$|\phi(\vec{x})\rangle=\sum_{i=1}^N \sqrt{x_i}|i\rangle,$$
 where $|i\rangle$ denotes the computational basis states, and $N$ is the dimensionality of the vector space.
 
 #### State Preparation:
 
 The quantum state $|\psi\rangle$ of the training dataset is a superposed state of all training data points, enabling simultaneous computation:
-$$
-|\psi\rangle=\frac{1}{\sqrt{N_{\text {train }}}} \sum_{i=1}^{N_{\text {train }}}\left|\phi\left(x^{(i)}\right)\right\rangle \otimes|i\rangle
-$$
+$$|\psi\rangle=\frac{1}{\sqrt{N_{\text {train }}}} \sum_{i=1}^{N_{\text {train }}}\left|\phi\left(x^{(i)}\right)\right\rangle \otimes|i\rangle$$
 with $\left|\phi\left(x^{(i)}\right)\right\rangle$ representing the amplitude-encoded quantum state of the $i$-th training sample, and $|i\rangle$ being the index qubit in superposition representing the label or the class of the training example.
 
 #### Distance Evaluation:
@@ -36,12 +32,10 @@ The SWAP test is used to measure the overlap between quantum states, which corre
 #### Interference and Measurement:
 
 Quantum interference is leveraged to measure the probability amplitude, which collapses due to the measurement postulate of quantum mechanics. The probability $P(|0\rangle)$ is computed and used to calculate the distance $D$ between the test and training samples:
-$$
-\begin{aligned}
+$$\begin{aligned}
 & P(|0\rangle)=\frac{1}{2}+\frac{1}{2}\left|\left\langle\phi_{\text {test }} \mid \phi_{\text {train }}\right\rangle\right|^2, \\
 & D=\sqrt{1-\left|\left\langle\phi_{\text {test }} \mid \phi_{\text {train }}\right\rangle\right|^2} .
-\end{aligned}
-$$
+\end{aligned}$$
 
 #### Classical Post-Processing:
 
