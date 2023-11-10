@@ -47,6 +47,25 @@ The q-KNN algorithm is implemented on a quantum circuit and executed on a quantu
 
 By integrating quantum algorithms into classical machine learning workflows, q-KNN represents a novel approach that may provide computational benefits as quantum technology evolves.
 
+### Algorithm Workflow
+
+The quantum KNN classifier uses the same approach for classifying data as the classical KNN classifier. The data itself may be either classical (encoded through quantum encoding techniques) or quantum (obtained from physical quantum-mechanical experiments). However, it provides a significant advantage over its classical counterpart by processing the training samples in parallel. This reduces the number of queries required to run the circuit.
+
+![](/readme_visuals/qknn_workflow.png)
+
+In this algorithm:
+
+1. The classical training and test feature vectors are converted to their quantum statevectors.
+
+2. The encoded data is applied to a quantum circuit to compute the distances. You'll use the SWAP test to compute the distances, which returns the inner product of the training and test vectors.
+
+3. The quantum data is then decoded along with the information about distances.
+
+4. The samples with the minimum distance are extracted.
+
+5. The most frequent class in these samples is assigned to the test sample.
+
+This classical-quantum KNN algorithm is partly based on the 2018 research paper from Dang, Yijie, Nan Jiang, Hao Hu, Zhuoxiao Ji, and Wenyin Zhang. “Image Classification Based on Quantum K-Nearest-Neighbor Algorithm.” Quantum Information Processing 17, no. 9 (2018). https://doi.org/10.1007/s11128-018-2004-9
 ## Installation
 
 To set up the necessary environment for running the q-KNN notebook, you need to have Python installed. All required Python libraries can be easily installed through the `requirements.txt` file included in the repository.
